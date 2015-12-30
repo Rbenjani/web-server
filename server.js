@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 var middleware = require("./middleware.js");
-var PORT = process.env.port || 3000; // process.env.port es el puerto de esucha de heroku
+var PORT = process.env.PORT || 3000; // process.env.PORT es el puerto de esucha de heroku
 
 app.use(middleware.logger);
 
